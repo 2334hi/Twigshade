@@ -73,7 +73,10 @@ let attachments = [];
 let directions = [];
 
 function setup() {
-  createCanvas(800, 500);
+  let cnv = createCanvas(800, 500); 
+  cnv.parent("p5-canvas-container"); 
+  
+
   
   // Setup initial background
   background(255); 

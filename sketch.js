@@ -73,10 +73,7 @@ let attachments = [];
 let directions = [];
 
 function setup() {
-  let cnv = createCanvas(800, 500); 
-  cnv.parent("p5-canvas-container"); 
-  
-
+  createCanvas(800, 500);
   
   // Setup initial background
   background(255); 
@@ -482,7 +479,6 @@ function rabbit(){ // This function controls rabbit movement speeds before
     } else if(disturbed && rooted){
       if(rabbits[i] >= 0){
         rabbits[i] += rabitSpeed; 
-        print(rabitSpeed); 
         
       } else if(rabbits[i] < 0){
         rabbits[i] -= rabitSpeed; 
